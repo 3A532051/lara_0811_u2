@@ -18,3 +18,7 @@ Route::get('/', function () {
 Route::get('welcome', function(){
     return view('welcome');
 });
+
+Route::get('hello/{mane}', function($name){
+    return 'Hello, '.$name;
+});
